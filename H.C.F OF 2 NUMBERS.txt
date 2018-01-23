@@ -1,0 +1,28 @@
+//to find the H.C.F. of the 2 numbers
+package employee;
+import java.util.Scanner;
+public class Employee 
+{
+    public static void main(String[] args) 
+    {
+        int i,n,c=0,d,a,z,b;
+        long s = 0,p=1;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter 2 numbers to calculate H.C.F. : ");
+        a=sc.nextInt();
+        b=sc.nextInt();
+        p=a*b;
+        for(i=1;i<p;i++)
+        {
+            if((a%i==0)&&(b%i==0))
+            {
+                s=i;
+            }
+        }
+        System.out.println("The H.C.F. is : "+s);    
+    }
+    
+}
+
+   
+ 

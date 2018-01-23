@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package employee;
+
+import java.util.Scanner;
+
+/*
+ *
+ * @author hp
+ */
+public class Employee {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {
+         float basic,da,hra,pf,np,gp;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the Basic Pay : Rs.");
+        basic=sc.nextInt();
+        da=(float) (0.25*basic);
+        System.out.println("DEARNESS ALLOWANCE   : Rs."+da);
+        hra=(float) (0.15*basic);
+        System.out.println("HOUSE RENT ALLOWANCE : Rs."+hra);
+        pf=(float) (0.833*basic);
+        System.out.println("PROVIDENT ALLOWANCE  : Rs."+pf);
+        np=basic+da+hra;
+        System.out.println("Net Pay : Rs."+np);
+        gp=np-pf;
+        System.out.println("GROSS Pay : Rs."+gp);
+    }
+    
+}
+
+   
+ 

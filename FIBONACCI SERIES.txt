@@ -1,0 +1,30 @@
+//to show the fibonacci series
+package employee;
+import java.util.Scanner;
+public class Employee 
+{
+    public static void main(String[] args) 
+    {
+        int i,n,c,d,a,z,b;
+        long s = 0,p=1;
+        a=0;
+        b=1;
+        c=0;
+        n=3;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the value of n :");
+        z=sc.nextInt();
+        do
+        {
+            c=a+b;
+            System.out.println(c);
+            a=b;
+            b=c;
+            n=n+1;
+        }while(n<=z);
+    }
+    
+}
+
+   
+ 
